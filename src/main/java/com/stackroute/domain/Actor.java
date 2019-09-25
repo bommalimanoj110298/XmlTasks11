@@ -4,20 +4,15 @@ public class Actor {
 
 
     private String name;
-private String gender;
-private int age;
+    private String gender;
+    private int age;
 
-    public void setName(String name) {
+    public Actor(String name, String gender, int age) {
+        this.age = age;
+        this.gender = gender;
         this.name = name;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
     public String getName() {
         return name;
     }
@@ -28,5 +23,21 @@ private int age;
 
     public int getAge() {
         return age;
+
     }
 }
+
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public void setGender(String gender) {
+//        this.gender = gender;
+//    }
+//
+//    public void setAge(int age) {
+//        this.age = age;
+//    }
+
+//    }
+
