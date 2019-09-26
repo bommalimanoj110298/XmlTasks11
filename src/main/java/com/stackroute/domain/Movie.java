@@ -1,20 +1,28 @@
 package com.stackroute.domain;
 
 import com.stackroute.domain.Actor;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Movie {
-    Actor actor;
+   private Actor actor;
+
+    public Movie()
+    {
+
+    }
+
 
     public Movie(Actor actor)
     {
 
         this.actor=actor;
+        System.out.println("jj");
     }
 
-
-//    public void setActor(Actor actor) {
-//        this.actor = actor;
-//    }
+    @Autowired
+    public void setActor(Actor actor) {
+        this.actor = actor;
+  }
     public void displayActor()
     {
         System.out.println(actor.getName());
