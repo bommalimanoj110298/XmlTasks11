@@ -29,7 +29,7 @@
 
 
 </bean>
-    <bean id="beanid" class="com.stackroute.BeanLifeCycleDemoBean"> </bean>
+    <bean id="beanid" class="com.stackroute.BeanLifeCycleDemoBean" init-method="customInt" destroy-method="custom-destroy"> </bean>
 
 </beans>
 

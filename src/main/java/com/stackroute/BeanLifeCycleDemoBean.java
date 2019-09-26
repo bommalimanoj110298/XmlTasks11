@@ -21,7 +21,7 @@ public class BeanLifeCycleDemoBean implements InitializingBean, DisposableBean {
         System.out.println("bean initialised");
 
     }
-    public void custonInt()
+    public void customInt()
     {
         System.out.println("bean Initialsed");
     }
