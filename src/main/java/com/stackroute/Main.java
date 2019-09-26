@@ -14,7 +14,8 @@ public class Main {
         ApplicationContext mainclassobject = new ClassPathXmlApplicationContext("beans.xml");
         Movie beanA = (Movie) mainclassobject.getBean("movieA");
         beanA.displayActor();
-        beanA.showMovieobject();
+
+//        BeanLifeCycleDemoBean object=(BeanLifeCycleDemoBean) mainclassobject.getBean("beanid");
 
     }
 }

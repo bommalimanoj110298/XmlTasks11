@@ -9,7 +9,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Lazy;
 
-public class Movie implements ApplicationContextAware , BeanNameAware {
+public class Movie  {
 
     private Actor actor;
     ApplicationContext object;
@@ -39,15 +39,15 @@ public class Movie implements ApplicationContextAware , BeanNameAware {
     }
 
 
-    @Override
-    public void setApplicationContext(ApplicationContext ap) throws BeansException {
-           this.object=ap;
+//    @Override
+//    public void setApplicationContext(ApplicationContext ap) throws BeansException {
+//           this.object=ap;
+//
+//           movieobject=(Movie)object.getBean("movieA");movieA
+//    }
 
-           movieobject=(Movie)object.getBean("movieA");
-    }
-
-    @Override
-    public void setBeanName(String s) {
-
-    }
+//    @Override
+//    public void setBeanName(String s) {
+//
+//    }
 }
